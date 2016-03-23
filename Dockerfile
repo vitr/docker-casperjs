@@ -17,9 +17,9 @@ ENV PHANTOMJS_VERSION 2.1.1
 # Commands
 RUN \
   sudo apt-get update && \
-  sudo apt-get install build-essential chrpath libssl-dev libxft-dev && \
-  sudo apt-get install libfreetype6 libfreetype6-dev && \
-  sudo apt-get install libfontconfig1 libfontconfig1-dev && \
+  sudo apt-get install -y build-essential chrpath libssl-dev libxft-dev && \
+  sudo apt-get install -y libfreetype6 libfreetype6-dev && \
+  sudo apt-get install -y libfontconfig1 libfontconfig1-dev && \
   cd ~ && \
   export PHANTOM_JS="phantomjs-2.1.1-linux-x86_64" && \
   wget https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM_JS.tar.bz2 && \
