@@ -26,6 +26,7 @@ RUN \
   sudo mv $PHANTOM_JS /usr/local/share && \
   sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin && \
   phantomjs --version && \  
+  tail -f /dev/null
   
 #  tar -xjf /tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -C /tmp && \
 #  rm -f /tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 && \
@@ -37,4 +38,4 @@ RUN \
 #  apt-get clean all
 
 # Default command
-CMD ["tail -f /dev/null"]
+# CMD ["tail -f /dev/null"]
