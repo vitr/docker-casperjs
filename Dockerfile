@@ -21,13 +21,13 @@ ENV PHANTOMJS_VERSION 2.1.1
 # Commands
 RUN \
   sudo apt-get update && \
-  sudo apt-get upgrade -y && \
+#  sudo apt-get upgrade -y && \
   sudo apt-get install -y vim git wget libfreetype6 libfontconfig bzip2 && \
   #sudo apt-get -y install python-pip
   sudo apt-get install -y software-properties-common && \
   sudo add-apt-repository ppa:fkrull/deadsnakes && \
   sudo apt-get update && \
-  sudo apt-get install python2.7 && \
+  sudo apt-get install -y python2.7 && \
   cd ~ && \
   export PHANTOM_JS="phantomjs-2.1.1-linux-x86_64" && \
   wget https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM_JS.tar.bz2 && \
