@@ -1,6 +1,9 @@
 # phantomjs
 #
 # Usage
+# docker run vitr/casperjs phantomjs -v
+
+
 #   docker run cmfatih/phantomjs /usr/bin/phantomjs -v
 #   docker run cmfatih/phantomjs /usr/bin/casperjs --version
 #   docker run -v `pwd`:/mnt/test cmfatih/phantomjs /usr/bin/phantomjs /mnt/test/test.js
@@ -25,7 +28,11 @@ RUN \
   sudo tar xvjf $PHANTOM_JS.tar.bz2 && \
   sudo mv $PHANTOM_JS /usr/local/share && \
   sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin && \
-  phantomjs --version
+  phantomjs --version && \
+  git clone git://github.com/n1k0/casperjs.git && \
+  sudo ln -sf $(pwd)/bin/casperjs /usr/local/bin/casperjs && \
+  casperjs --version  
+  
   
 #  tar -xjf /tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -C /tmp && \
 #  rm -f /tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 && \
