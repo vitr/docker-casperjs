@@ -30,7 +30,7 @@ RUN \
   sudo mv $PHANTOM_JS /usr/local/share && \
   sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin && \
   phantomjs --version && \
-  git clone https://github.com/vitr/docker-casperjs.git && \
+  git clone https://github.com/n1k0/casperjs.git && \
   cd casperjs && \
   sudo ln -sf $(pwd)/bin/casperjs /usr/local/bin/casperjs && \
   casperjs --version  
