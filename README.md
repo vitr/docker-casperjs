@@ -20,4 +20,3 @@ https://github.com/cmfatih/dockerhub/blob/master/phantomjs/Dockerfile
     git clone git://github.com/n1k0/casperjs.git
     sudo ln -sf $(pwd)/bin/casperjs /usr/local/bin/casperjs
     casperjs --version
-
