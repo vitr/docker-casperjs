@@ -2,6 +2,7 @@
 #
 # Usage
 # docker run vitr/casperjs phantomjs -v
+# docker run vitr/casperjs casperjs -v
 
 
 #   docker run cmfatih/phantomjs /usr/bin/phantomjs -v
@@ -30,6 +31,7 @@ RUN \
   sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin && \
   phantomjs --version && \
   git clone git://github.com/n1k0/casperjs.git && \
+  cd casperjs && \
   sudo ln -sf $(pwd)/bin/casperjs /usr/local/bin/casperjs && \
   casperjs --version  
   
