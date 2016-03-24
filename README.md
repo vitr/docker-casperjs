@@ -22,3 +22,16 @@ https://github.com/cmfatih/dockerhub/blob/master/phantomjs/Dockerfile
     casperjs --version
     
     CMD tail -f /dev/null
+
+
+Usage example
+start the docker container
+
+docker run -d --name casperjs-daemon -v /home/ubuntu/UAT:/mnt/test --restart always vitr/casperjs
+
+use the container
+
+docker exec casperjs-daemon casperjs --version
+
+docker exec casperjs-daemon casperjs test /mnt/test/testing.js
+ 
