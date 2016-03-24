@@ -25,7 +25,8 @@ RUN \
   sudo apt-get install -y vim git wget libfreetype6 libfontconfig bzip2 && \
   #sudo apt-get -y install python-pip
   sudo apt-get install -y software-properties-common && \
-  sudo add-apt-repository ppa:fkrull/deadsnakes && \
+#  sudo add-apt-repository ppa:fkrull/deadsnakes && \
+  sudo add-apt-repository ppa:fkrull/deadsnakes-python2.7 && \
   sudo apt-get update && \
   sudo apt-get install -y python2.7 && \
   cd ~ && \
