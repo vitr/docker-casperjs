@@ -1,4 +1,4 @@
-# docker-casperjs
+#Docker Image for CasperJS
 Everything you need to run [CasperJS](http://casperjs.org/)
 
 
