@@ -47,4 +47,4 @@ RUN \
 #  apt-get clean all
 
 # Default command
-CMD ["tail -f /dev/null"]
+CMD tail -f /dev/null
