@@ -1,15 +1,13 @@
-# phantomjs
+# CasperJs
+# http://casperjs.org/
 #
 # Usage
-# docker run vitr/casperjs phantomjs -v
-# docker run vitr/casperjs casperjs --version
-
-
-#   docker run cmfatih/phantomjs /usr/bin/phantomjs -v
-#   docker run cmfatih/phantomjs /usr/bin/casperjs --version
-#   docker run -v `pwd`:/mnt/test cmfatih/phantomjs /usr/bin/phantomjs /mnt/test/test.js
-
-# VERSION 1.0.0
+#  exec mode
+#    docker run --rm vitr/casperjs casperjs --version
+#    docker run --rm vitr/casperjs phantomjs --version
+#
+#  daemon mode
+#    docker run -d --name casperjs-daemon -v /home/ubuntu/test:/mnt/test --restart always vitr/casperjs
 
 FROM vitr/phantomjs
 
@@ -29,4 +27,4 @@ WORKDIR /home/casperjs
 ENTRYPOINT []
 
 # run the image as daemon
-CMD tail -f /dev/null
+CMD tail -f /dev/null #casperjs
