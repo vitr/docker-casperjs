@@ -25,7 +25,8 @@ RUN mkdir /home/casperjs
 
 WORKDIR /home/casperjs
 
-ENTRYPOINT /bin/sh -c
+# reset from parent image
+ENTRYPOINT []
 
-# Default command
+# run the image as daemon
 CMD tail -f /dev/null
