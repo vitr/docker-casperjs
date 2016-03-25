@@ -27,4 +27,4 @@ WORKDIR /home/casperjs
 ENTRYPOINT []
 
 # run the image as daemon
-CMD bash
+CMD echo "casperjs running..." && tail -f /dev/null
