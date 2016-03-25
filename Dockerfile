@@ -25,7 +25,7 @@ RUN mkdir /home/casperjs
 
 WORKDIR /home/casperjs
 
-ENTRYPOINT ["/bin/sh", " -c"]
+ENTRYPOINT /bin/sh -c
 
 # Default command
 CMD tail -f /dev/null
