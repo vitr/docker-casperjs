@@ -34,3 +34,7 @@ mount your own script
     docker run --rm -v `pwd`/myscript.js:/home/phantomjs/script.js vitr/phantomjs
 
 #### Some key points
+
+
+
+![Analytics](https://ga-beacon.appspot.com/UA-75628680-1/welcome-page)
