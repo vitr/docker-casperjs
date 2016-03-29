@@ -16,12 +16,12 @@ MAINTAINER vitr http://vit.online
 RUN apt-get install -y git python
 
 WORKDIR /root
-RUN git clone git://github.com/n1k0/casperjs.git
+RUN git clone https://github.com/n1k0/casperjs.git
 RUN mv casperjs /opt/
 RUN ln -sf /opt/casperjs/bin/casperjs /usr/local/bin/casperjs
-RUN mkdir /home/casperjs
+RUN mkdir /home/casperjs-tests
 
-WORKDIR /home/casperjs
+WORKDIR /home/casperjs-tests
 
 # reset from parent image
 ENTRYPOINT []
