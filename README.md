@@ -3,26 +3,20 @@ Everything you need to run CasperJS http://casperjs.org
 built on top of PhantomJs image https://github.com/vitr/docker-phantomjs
 
 #### Usage
-start the docker container
-
-    docker run -d --name casperjs-daemon -v /home/ubuntu/test:/mnt/test --restart always vitr/casperjs
-
-`/home/ubuntu/test` is a local folder with you casperjs tests, it's mounted into the container
+`/home/ubuntu/tests` is a local folder with you casperjs tests, it's mounted into the container
 
   exec mode
     docker run --rm vitr/casperjs casperjs --version
     docker run --rm vitr/casperjs phantomjs --version
 
-  daemon mode
-  
-    docker run -d --name casperjs-daemon -v /home/ubuntu/test:/mnt/test --restart always vitr/casperjs
+start the docker container in daemon mode
 
+    docker run -d --name casperjs-daemon -v /home/ubuntu/tests:/home/casperjs-tests --restart always vitr/casperjs
 
-
-use the container @TODO set WORKDIR to /mnt/test/
+check version and run test
 
     docker exec casperjs-daemon casperjs --version
-    docker exec casperjs-daemon casperjs test /mnt/test/testing.js
+    docker exec casperjs-daemon casperjs test mytest.js
  
   sample test
   
@@ -40,6 +34,10 @@ run your own script
 #### Some key points
 
 @TODO add key points
+By default the image is running as a daemon, note the command in Dockerfile
+`CMD echo "casperjs running..." && tail -f /dev/null`
+`echo "casperjs running..."` is used to identify the running daemon from the host `ps -ax`
+
 
 ------------------------------------------
 [![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/docker-casperjs?flat-gif)](https://github.com/vitr/google-analytics-beacon/)
