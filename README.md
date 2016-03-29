@@ -1,5 +1,6 @@
 #Docker Image for CasperJS
-Everything you need to run CasperJS http://casperjs.org
+Everything you need to run CasperJS http://casperjs.org  
+built on top of PhantomJs image https://github.com/vitr/docker-phantomjs
 
 #### Usage
 start the docker container
@@ -27,13 +28,14 @@ use the container @TODO set WORKDIR to /mnt/test/
   
     docker exec casperjs-daemon casperjs test /opt/casperjs/samples/googletesting.js
 
-
+#### Using PhantomJS
 'hello world' and version check (default script)
 
-    docker run --rm vitr/phantomjs
-mount your own script
+    docker exec casperjs-daemon phantomjs /home/phantomjs/script.js
 
-    docker run --rm -v `pwd`/myscript.js:/home/phantomjs/script.js vitr/phantomjs
+run your own script
+
+    docker exec casperjs-daemon phantomjs /mnt/test/phantomjs/myscript.js
 
 #### Some key points
 
