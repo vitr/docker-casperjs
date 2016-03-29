@@ -3,7 +3,7 @@ Everything you need to run CasperJS http://casperjs.org
 built on top of PhantomJs image https://github.com/vitr/docker-phantomjs
 
 #### Usage
-`/home/ubuntu/tests` is a local folder with you casperjs tests, it's mounted into the container
+`/home/ubuntu/tests` is a folder on host machine with your casperjs tests, it's mounted into the container, you can change it to any folder you prefer.
 
   exec mode
     docker run --rm vitr/casperjs casperjs --version
