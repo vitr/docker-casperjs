@@ -38,4 +38,4 @@ mount your own script
 @TODO add key points
 
 ------------------------------------------
-[![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/google-analytics-beacon?flat-gif)](https://github.com/vitr/google-analytics-beacon/)
+[![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/docker-casperjs?flat-gif)](https://github.com/vitr/google-analytics-beacon/)
