@@ -35,6 +35,7 @@ mount your own script
 
 #### Some key points
 
+@TODO add key points
 
-
-![Analytics](https://ga-beacon.appspot.com/UA-75628680-1/welcome-page)
+------------------------------------------
+[![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/google-analytics-beacon?flat-gif)](https://github.com/vitr/google-analytics-beacon/)
