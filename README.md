@@ -13,9 +13,9 @@ start the docker container
     docker run --rm vitr/casperjs phantomjs --version
 
   daemon mode
+  
     docker run -d --name casperjs-daemon -v /home/ubuntu/test:/mnt/test --restart always vitr/casperjs
-  sample test
-    docker exec casperjs-daemon casperjs test /opt/casperjs/samples/googletesting.js
+
 
 
 use the container @TODO set WORKDIR to /mnt/test/
@@ -23,7 +23,9 @@ use the container @TODO set WORKDIR to /mnt/test/
     docker exec casperjs-daemon casperjs --version
     docker exec casperjs-daemon casperjs test /mnt/test/testing.js
  
-@TODO add a sample  test
+  sample test
+  
+    docker exec casperjs-daemon casperjs test /opt/casperjs/samples/googletesting.js
 
 
 'hello world' and version check (default script)
