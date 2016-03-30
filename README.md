@@ -34,9 +34,10 @@ run your own script
     docker exec casperjs-daemon phantomjs /mnt/test/phantomjs/myscript.js
 
 #### Some key points
-By default the image is running as a daemon, note the command in Dockerfile
+By default the image is running as a daemon, note the command in Dockerfile 
+
     CMD echo "casperjs running..." && tail -f /dev/null
-`echo "casperjs running..."` is used to identify the running daemon from the host `ps -ax` 
+`echo "casperjs running..."` is used to identify the running daemon from the host `ps -ax`  
 I prefer running it like this on the dedicated test server. Practicing TDD, I use it quite frequently and I don't want to mount the volumes on each test run. I pull my new tests from git directly into the once mounted folder and simply run `exec` inside the container.  
 If you prefer exec mode, just don't forget the `--rm` option, as you may pollute your host machine with many useless stopped containers.
 
