@@ -26,7 +26,7 @@ sample test
 
 run your own script
 
-    docker exec casperjs-daemon casperjs test /home/casperjs-tests/mytest.js --log-level=debug;
+    docker exec casperjs-daemon casperjs test /home/casperjs-tests/mytesting.js --log-level=debug;
 
 #### Using PhantomJS
 'hello world' and version check (default script)
