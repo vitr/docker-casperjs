@@ -45,4 +45,9 @@ By default the image is running as a daemon, note the command in Dockerfile
 I prefer running it like this on the dedicated test server. Practicing TDD, I use it quite frequently and I don't want to mount the volumes on each test run. I pull my new tests from git directly into the once mounted folder and simply run `exec` inside the always running container.  
 If you prefer exec mode, just don't forget the `--rm` option, as you may pollute your host machine with many useless stopped containers.
 
+#### Roadmap
+* [ ] Add example of docker-compose.yml
+
+
+
 ![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/docker-casperjs?pixel)
