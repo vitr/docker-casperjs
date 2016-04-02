@@ -50,4 +50,4 @@ If you prefer exec mode, just don't forget the `--rm` option, as you may pollute
 
 
 
-![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/docker-casperjs?pixel)
+![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/docker-casperjs?flat-gif)
