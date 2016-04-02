@@ -49,5 +49,5 @@ If you prefer exec mode, just don't forget the `--rm` option, as you may pollute
 * [ ] Add example of docker-compose.yml
 
 
-
+[![](https://badge.imagelayers.io/vitr/casperjs:latest.svg)](https://imagelayers.io/?images=vitr/casperjs:latest 'Get your own badge on imagelayers.io') 
 ![Analytics](https://vitr-analytics.appspot.com/UA-75628680-1/docker-casperjs?flat-gif)
